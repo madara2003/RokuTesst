@@ -1,0 +1,10 @@
+<component name="VideoAboutCar" extends = "Video">
+    <script type="text/brightscript" uri="VideoComponent.brs" />   
+     
+      <interface>
+         <field id="disableEventBubling" type="bool" alwaysNotify ="true"/>
+      </interface>
+           
+      <children>       
+      </children>
+</component>

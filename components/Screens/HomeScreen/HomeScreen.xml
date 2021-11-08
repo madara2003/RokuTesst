@@ -1,0 +1,23 @@
+<component name="HomeScreen" extends = "Group">
+    <script type="text/brightscript" uri="HomeScreen.brs" />  
+ 
+    <interface>
+       <field id="setFocusSecondScreen" type="bool" onChange ="setFocusSecondScreen" alwaysNotify = "true" />
+    </interface> 
+     <children>
+        <Poster id = "backgroundPoster" blendColor= "#808080"  width = "1280" height="720" />
+
+        <LayoutGroup id="infoHomeGroup"  translation ="[40, 100]" itemSpacings="[0.0, 30]">
+           <Label id="infoAboutTesting"  color = "#FFFFFF" height = "100" wrap="true" horizAlign = "left" lineSpacing = "10.0" width = "600" vertAlign = "center" />
+           <Label id="genre" text="Genre: motoring | 0 year"  color="#FFFFFF" opacity="0.7"  />
+           <Label id = "descriptionOfCars" color="#FFFFFF" width="600" wrap="true" height="100" lineSpacing="7.0"  />
+         </LayoutGroup>
+    
+         <MarkupGrid id = "RListOfCars"  rowHeights = "[140]" columnSpacings ="[35.0, 35.0, 35.0, 35.0 ]" columnWidths="[280]"  itemComponentName ="HomeCarRowListCell" translation = "[ 40, 470 ]" vertFocusAnimationStyle="fixedFocusWrap" horizFocusAnimationStyle="floatingFocus" numColumns = "4" numRows = "1" itemSize = "[280, 140]" drawFocusFeedback = "true"   />
+               
+         <Animation   id="blendAnimation"  duration="1.0"  repeat="false"   easeFunction="linear" >
+            <FloatFieldInterpolator  id = "testOpacity" key="[0.0, 0.5, 1.0]"    keyValue="[ 1.0, 0.5, 1.0]"       fieldToInterp="backgroundPoster.opacity"   />
+         </Animation>  
+     </children>
+</component>
+ 

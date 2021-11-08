@@ -1,0 +1,9 @@
+<component name="TaskNode" extends = "Task">
+    <script type="text/brightscript" uri="TaskNode.brs" />   
+    <interface>
+        <field id="responseData" type = "assocarray" />
+        <field id="requestUrl" type="string" value="https://videoelephant.feed.remoco.tv/mrss/collections/auto-moto-peak-tv-linear-playlist?encode" />
+    </interface>
+     <children>       
+     </children>
+</component>

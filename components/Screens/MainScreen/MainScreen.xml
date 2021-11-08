@@ -1,0 +1,9 @@
+<component name="MainScreen" extends = "Scene">
+
+    <script type="text/brightscript" uri="MainScreen.brs" />   
+
+     <children>
+       <HomeScreen id = "HomeScreen" />
+     </children>
+
+</component>
